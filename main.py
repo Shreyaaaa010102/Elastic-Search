@@ -36,7 +36,7 @@ load_dotenv()
 aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
 aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
 aws_region = "ap-south-1"
-s3_bucket_name = "icc-cases"
+s3_bucket_name = "xxxxxxxx"
 
 # Initialize the S3 client with credentials
 s3_client = boto3.client(
@@ -48,12 +48,12 @@ s3_client = boto3.client(
 
 class ElasticsearchClient_SSLConnection:
     def __init__(self):
-        url = "elasticsearch-190712-0.cloudclusters.net"
+        url = "elasticsearch-xxxxxxx-0.cloudclusters.net"
         port = ""
         try:
             self.conn = Elasticsearch(
                 hosts=[{"host": url, "port": port, "scheme": "https"}],
-                http_auth=("elastic", "HmtoTvKY"),
+                http_auth=("xxxxxxx", "xxxxxxx"),
                 verify_certs=True,
                 ca_certs="certs/ca_certificate.pem",
             )
