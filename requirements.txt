@@ -1,0 +1,7 @@
+boto3
+botocore
+elasticsearch
+fastapi
+pydantic
+uvicorn
+python-dotenv
